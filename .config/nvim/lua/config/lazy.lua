@@ -22,7 +22,9 @@ require("lazy").setup({
   dev = { path = vim.fn.expand("$HOME") .. "/src/github.com/projects" },
   install = { missing = false },
   ui = { border = "rounded" },
-
+  rocks = {
+    enabled = false,
+  },
   checker = { enabled = false }, -- check for updates
   change_detection = { notify = false },
   performance = {

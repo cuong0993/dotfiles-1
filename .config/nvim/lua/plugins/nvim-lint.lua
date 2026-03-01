@@ -14,7 +14,7 @@ return {
         nix = { "nix" },
         python = { "ruff" },
         yaml = { "yamllint" },
-        markdown = { "markdownlint" },
+        markdown = { "rumdl" },
       }
     end,
   },

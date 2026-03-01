@@ -140,7 +140,7 @@ vim.diagnostic.handlers.virtual_text = {
 -- end
 
 -- enable builtin NES
-vim.lsp.inline_completion.enable()
+-- vim.lsp.inline_completion.enable()
 
 -- Create an autocommand to set up LSP keymaps when an LSP client attaches to a buffer.
 vim.api.nvim_create_autocmd("LspAttach", {
