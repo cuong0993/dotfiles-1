@@ -15,9 +15,9 @@ return {
     --
     formatters_by_ft = {
       python = { "ruff_organize_imports", "ruff_format" },
-      terraform = { "tofu_fmt" },
-      tf = { "tofu_fmt" },
-      ["terraform-vars"] = { "tofu_fmt" },
+      terraform = { "terraform_fmt" },
+      tf = { "terraform_fmt" },
+      ["terraform-vars"] = { "terraform_fmt" },
       go = { "gofumpt", "golines" },
       javascript = { "oxfmt", lsp_format = "fallback" },
       typescript = { "oxfmt", lsp_format = "fallback" },
