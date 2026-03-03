@@ -25,6 +25,7 @@ return {
       json = { "prettier", stop_on_first = true },
       jsonc = { "prettier", stop_on_first = true },
       lua = { "stylua" },
+      toml = { "oxfmt" },
       nix = { "nixfmt" },
     },
     formatters = {
