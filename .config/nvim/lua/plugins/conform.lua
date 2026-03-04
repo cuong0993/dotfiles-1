@@ -9,24 +9,31 @@ return {
   opts = {
     default_format_opts = {
       lsp_fallback = true,
-      timeout_ms = 500,
+      timeout_ms = 2000,
     },
     format_on_save = {},
     --
     formatters_by_ft = {
-      python = { "ruff_organize_imports", "ruff_format" },
-      terraform = { "terraform_fmt" },
-      tf = { "terraform_fmt" },
       ["terraform-vars"] = { "terraform_fmt" },
+      dart = { "dart_format" },
       go = { "gofumpt", "golines" },
+      html = { "oxfmt", lsp_format = "fallback" },
       javascript = { "oxfmt", lsp_format = "fallback" },
-      typescript = { "oxfmt", lsp_format = "fallback" },
-      typescriptreact = { "oxfmt", lsp_format = "fallback" },
       json = { "oxfmt", stop_on_first = true },
       jsonc = { "oxfmt", stop_on_first = true },
+      kotlin = { "ktfmt" },
+      kts = { "ktfmt" },
       lua = { "stylua" },
-      toml = { "oxfmt" },
       nix = { "nixfmt" },
+      python = { "ruff_organize_imports", "ruff_format" },
+      sql = { "sqlfluff" },
+      terraform = { "terraform_fmt" },
+      tf = { "terraform_fmt" },
+      toml = { "oxfmt" },
+      typescript = { "oxfmt", lsp_format = "fallback" },
+      typescriptreact = { "oxfmt", lsp_format = "fallback" },
+      yaml = { "oxfmt" },
+      yml = { "oxfmt" },
     },
     formatters = {
       golines = {
