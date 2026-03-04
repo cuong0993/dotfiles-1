@@ -109,23 +109,4 @@ return {
       require("blink.cmp").setup(opts)
     end,
   },
-  -- add cmp-dbee separate to not clutter the main config
-  -- {
-  --   "saghen/blink.cmp",
-  --   dependencies = {
-  --     "MattiasMTS/cmp-dbee",
-  --     enabled = true,
-  --     ft = { "sql" },
-  --     dev = true,
-  --     dependencies = { "kndndrj/nvim-dbee" },
-  --   },
-  --   opts = {
-  --     sources = {
-  --       compat = { "dbee" },
-  --       providers = {
-  --         dbee = { name = "dbee", module = "blink.compat.source" },
-  --       },
-  --     },
-  --   },
-  -- },
 }

@@ -1,3 +1,4 @@
+.history
 bin/.local/bin
-result # nix output
 copilot/*
+result # nix output

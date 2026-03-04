@@ -60,28 +60,6 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   end,
 })
 
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  group = vim.api.nvim_create_augroup("go_template_filetype", { clear = true }),
-  pattern = "*.gotmpl,*.tmpl,*.tpl",
-  callback = function()
-    vim.bo.filetype = "gotmpl"
-  end,
-})
-
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  group = vim.api.nvim_create_augroup("helmfile_filetype", { clear = true }),
-  pattern = {
-    "*/templates/*.tpl",
-    "*/templates/*.yaml",
-    "*/templates/*.yml",
-    "helmfile*.yaml",
-    "helmfile*.yml",
-  },
-  callback = function()
-    vim.bo.filetype = "helm"
-  end,
-})
-
 vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost" }, {
   group = vim.api.nvim_create_augroup("nvim-lint", { clear = true }),
   desc = "Run linters on save/read",

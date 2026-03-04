@@ -8,7 +8,6 @@ return {
         tf = { "terraform_validate", "tflint" },
         ["terraform-vars"] = { "terraform_validate", "tfsec", "tflint" },
         dockerfile = { "hadolint" },
-        go = { "golangcilint" },
         sh = { "shellcheck" },
         bash = { "shellcheck" },
         nix = { "nix" },

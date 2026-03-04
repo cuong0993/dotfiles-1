@@ -13,7 +13,6 @@ return {
           min_window_height = 20,
         },
       },
-      { "ngalaiko/tree-sitter-go-template", ft = "go" },
     },
     version = false,
     branch = "main",
@@ -22,13 +21,6 @@ return {
     event = { "VeryLazy" },
     opts = {
       ensure_installed = {
-        "go",
-        "gomod",
-        "gowork",
-        "gosum",
-        "gotmpl",
-        "templ",
-        "helm",
         "bash",
         "gitcommit",
         "javascript",
