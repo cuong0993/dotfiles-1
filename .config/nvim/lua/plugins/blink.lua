@@ -24,7 +24,7 @@ return {
         ["<Tab>"] = {
           "snippet_forward",
           function()
-            return vim.lsp.inline_completion.get()
+            -- return vim.lsp.inline_completion.get()
           end,
           "fallback",
         },
