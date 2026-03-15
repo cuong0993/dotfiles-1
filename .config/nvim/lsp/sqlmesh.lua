@@ -1,7 +1,7 @@
 ---@type vim.lsp.Config
 return {
   cmd = { "sqlmesh_lsp" },
-  filetypes = { "sql", "python" },
+  filetypes = { "sql" },
   root_markers = {
     "config.py",
     "config.yml",
