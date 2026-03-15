@@ -263,3 +263,15 @@ end, {
   end,
   desc = "Restart LSP server(s)",
 })
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+  callback = function()
+    vim.lsp.buf.format({ async = false }) -- optional
+    -- detach and reattach all clients
+    local buf = vim.api.nvim_get_current_buf()
+    for _, client in pairs(vim.lsp.get_clients({ bufnr = buf })) do
+      vim.lsp.buf_detach_client(buf, client.id)
+      vim.lsp.buf_attach_client(buf, client.id)
+    end
+  end,
+})
